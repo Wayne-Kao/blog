@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{ i.coding }</title>
+  <icon>https://blog.icoding.tw/icon.png</icon>
+  <subtitle>Enjoy &amp; Love coding, I&#39;m coding.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.icoding.tw/"/>
+  <updated>2020-04-04T19:31:08.313Z</updated>
+  <id>https://blog.icoding.tw/</id>
+  
+  <author>
+    <name>Wayne</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>建立Blog使用 Hexo + GitHub Pages + CircleCI</title>
+    <link href="https://blog.icoding.tw/posts/32581212.html"/>
+    <id>https://blog.icoding.tw/posts/32581212.html</id>
+    <published>2020-04-02T21:59:29.000Z</published>
+    <updated>2020-04-04T19:31:08.313Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/blog-introduction/cover.png&quot; alt=&quot;Cover&quot;&gt;&lt;/p&gt;
+&lt;p&gt;一般blog選擇可能是採用線上編輯平台，像是Medium、Blogger、Wordpress等，或是透過靜態網站產生器，像是Hexo、Jekyll、Hugo等，而後來還是偏好後者，主要是彈性比較高，不會受限於線上平台的功能、免費版可能會有廣告或是版型等問題，但也因此靜態網站產生器建置需要一些程式能力，不過剛好是技術blog所以也很符合這樣的精神，而blog產生的靜態網頁則是部署至GitHub Pages，也透過CircleCI整合達到自動建置與部署。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="https://blog.icoding.tw/categories/Hexo/"/>
+    
+    
+      <category term="Blog" scheme="https://blog.icoding.tw/tags/Blog/"/>
+    
+      <category term="Hexo" scheme="https://blog.icoding.tw/tags/Hexo/"/>
+    
+      <category term="GitHub" scheme="https://blog.icoding.tw/tags/GitHub/"/>
+    
+      <category term="GitHub Pages" scheme="https://blog.icoding.tw/tags/GitHub-Pages/"/>
+    
+      <category term="CircleCI" scheme="https://blog.icoding.tw/tags/CircleCI/"/>
+    
+  </entry>
+  
+</feed>
