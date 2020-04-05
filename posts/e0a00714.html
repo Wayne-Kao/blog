@@ -24,26 +24,25 @@
     var CONFIG = {"hostname":"blog.icoding.tw","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"scrollpercent":true,"sidebar":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
-  <meta name="description" content="一般blog選擇可能是採用線上編輯平台，像是Medium、Blogger、Wordpress等，或是透過靜態網站產生器，像是Hexo、Jekyll、Hugo等，而後來還是偏好後者，主要是彈性比較高，不會受限於線上平台的功能、免費版可能會有廣告或是版型等問題，但也因此靜態網站產生器建置需要一些程式能力，不過剛好是技術blog所以也很符合這樣的精神，而blog產生的靜態網頁則是部署至GitHub P">
+  <meta name="description" content="Hexo是一個快速、簡單且強大的blog框架，支援Markdown語法，豐富的主題 (Theme) 與套件 (Plugin) 生態，一般常見的需求都可以滿足，像是文章搜尋、評論系統、文章標籤與分類等，適合有些程式基礎的人，可以快速方便地建置blog。當然，你也可以選擇一步一步調整屬於自己的配置，那麼就好好跟大家介紹一下Hexo吧。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="建立Blog使用 Hexo + GitHub Pages + CircleCI">
-<meta property="og:url" content="https://blog.icoding.tw/posts/32581212.html">
+<meta property="og:title" content="Hexo- 帶你認識Blog框架">
+<meta property="og:url" content="https://blog.icoding.tw/posts/e0a00714.html">
 <meta property="og:site_name" content="{ i.coding }">
-<meta property="og:description" content="一般blog選擇可能是採用線上編輯平台，像是Medium、Blogger、Wordpress等，或是透過靜態網站產生器，像是Hexo、Jekyll、Hugo等，而後來還是偏好後者，主要是彈性比較高，不會受限於線上平台的功能、免費版可能會有廣告或是版型等問題，但也因此靜態網站產生器建置需要一些程式能力，不過剛好是技術blog所以也很符合這樣的精神，而blog產生的靜態網頁則是部署至GitHub P">
+<meta property="og:description" content="Hexo是一個快速、簡單且強大的blog框架，支援Markdown語法，豐富的主題 (Theme) 與套件 (Plugin) 生態，一般常見的需求都可以滿足，像是文章搜尋、評論系統、文章標籤與分類等，適合有些程式基礎的人，可以快速方便地建置blog。當然，你也可以選擇一步一步調整屬於自己的配置，那麼就好好跟大家介紹一下Hexo吧。">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://blog.icoding.tw/images/blog-introduction/cover.png">
-<meta property="article:published_time" content="2020-04-02T21:59:29.000Z">
+<meta property="og:image" content="https://blog.icoding.tw/images/hexo-introduction/cover.png">
+<meta property="article:published_time" content="2020-04-05T23:12:19.000Z">
 <meta property="article:modified_time" content="2020-04-05T18:18:59.864Z">
 <meta property="article:author" content="Wayne">
 <meta property="article:tag" content="Blog">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="GitHub">
 <meta property="article:tag" content="GitHub Pages">
-<meta property="article:tag" content="CircleCI">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.icoding.tw/images/blog-introduction/cover.png">
+<meta name="twitter:image" content="https://blog.icoding.tw/images/hexo-introduction/cover.png">
 
-<link rel="canonical" href="https://blog.icoding.tw/posts/32581212.html">
+<link rel="canonical" href="https://blog.icoding.tw/posts/e0a00714.html">
 
 
 <script id="page-configurations">
@@ -56,7 +55,7 @@
   };
 </script>
 
-  <title>建立Blog使用 Hexo + GitHub Pages + CircleCI | { i.coding }</title>
+  <title>Hexo- 帶你認識Blog框架 | { i.coding }</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161945004-1"></script>
     <script>
@@ -210,7 +209,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://blog.icoding.tw/posts/32581212.html">
+    <link itemprop="mainEntityOfPage" href="https://blog.icoding.tw/posts/e0a00714.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -223,7 +222,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          建立Blog使用 Hexo + GitHub Pages + CircleCI
+          Hexo- 帶你認識Blog框架
         </h1>
 
         <div class="post-meta">
@@ -232,16 +231,10 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2020-04-02 21:59:29" itemprop="dateCreated datePublished" datetime="2020-04-02T21:59:29+00:00">2020-04-02</time>
+              <time title="創建時間：2020-04-05 23:12:19 / 修改時間：18:18:59" itemprop="dateCreated datePublished" datetime="2020-04-05T23:12:19+00:00">2020-04-05</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新於</span>
-                <time title="修改時間：2020-04-05 18:18:59" itemprop="dateModified" datetime="2020-04-05T18:18:59+00:00">2020-04-05</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -265,14 +258,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">文章字數：</span>
-              <span>1.1k</span>
+              <span>2.2k</span>
             </span>
             <span class="post-meta-item" title="所需閱讀時間">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">所需閱讀時間 &asymp;</span>
-              <span>2 分鐘</span>
+              <span>4 分鐘</span>
             </span>
 
         </div>
@@ -284,29 +277,73 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="/images/blog-introduction/cover.png" alt="Cover"></p>
-<p>一般blog選擇可能是採用線上編輯平台，像是Medium、Blogger、Wordpress等，或是透過靜態網站產生器，像是Hexo、Jekyll、Hugo等，而後來還是偏好後者，主要是彈性比較高，不會受限於線上平台的功能、免費版可能會有廣告或是版型等問題，但也因此靜態網站產生器建置需要一些程式能力，不過剛好是技術blog所以也很符合這樣的精神，而blog產生的靜態網頁則是部署至GitHub Pages，也透過CircleCI整合達到自動建置與部署。</p>
+        <p><img src="/images/hexo-introduction/cover.png" alt="Cover"></p>
+<p>Hexo是一個快速、簡單且強大的blog框架，支援Markdown語法，豐富的主題 (Theme) 與套件 (Plugin) 生態，一般常見的需求都可以滿足，像是文章搜尋、評論系統、文章標籤與分類等，適合有些程式基礎的人，可以快速方便地建置blog。當然，你也可以選擇一步一步調整屬於自己的配置，那麼就好好跟大家介紹一下Hexo吧。</p>
 <a id="more"></a>
 
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>其實滿久以前就斷斷續續寫過一些blog，不過都沒有持續下去，而最近又開始想要寫些技術文章，所以重新將blog給建置起來，參考網路文章跟建置的架構，最後採用 <code>Hexo</code> + <code>GitHub Pages</code> + <code>CircleCI</code> ，而這樣的架構優點有:</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>這次介紹會先從基礎安裝與建置、文章發佈流程與部署陸續介紹，至於細節的設定與套件 (Plugin) 部分，礙於篇幅會另外介紹。</p>
+<p>而同時你需要具備 <code>Node.js</code> 、<code>npm</code> 與 <code>Git</code> 等基本相關知識，細節就不再此說明。</p>
+<h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><p>安裝Hexo之前需要先安裝下列軟體:</p>
 <ul>
-<li>免費使用</li>
-<li>支援Markdown語法</li>
-<li>版型或設定可自行修改</li>
-<li>性能快速與服務穩定</li>
-<li>自動建置並部署</li>
+<li><a href="https://nodejs.org" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="http://git-scm.com" target="_blank" rel="noopener">Git</a></li>
 </ul>
-<p>不過也不是沒有缺點:</p>
+<p>※ 具體安裝細節可以參考<a href="https://hexo.io/docs/index.html" target="_blank" rel="noopener">Hexo官方文件</a>或是其官方網站說明。</p>
+<p>安裝上述必要軟體後，只需要透過npm命令即可完成Hexo安裝</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>※實際上我們是安裝Hexo的<a href="https://zh.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2" target="_blank" rel="noopener">Command-Line interface</a>，之後就可以透過命令方式執行Hexo。</p>
+<h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+
+<p>※ <code>hexo init</code> 命令需要指定<strong>空或不存在的資料夾</strong>執行。</p>
+<p>執行成功後，會有以下主要檔案與目錄結構</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<h3 id="scaffolds-目錄"><a href="#scaffolds-目錄" class="headerlink" title="scaffolds 目錄"></a>scaffolds 目錄</h3><p>官方翻譯為<strong>鷹架</strong>，類似於模板的概念，預設會有 <code>draft.md</code> 、 <code>post.md</code> 和 <code>page.md</code> 三個scaffold，當我們透過Hexo命令建立檔案時，則會根據 <code>[layout]</code> 參數對應至scaffolds目錄下的模板來建立檔案</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo new [layout] &lt;title&gt;</span></span><br><span class="line">$ hexo new page <span class="string">"About"</span></span><br></pre></td></tr></table></figure>
+
+<p>在執行上述命令時，Hexo會在scaffolds目錄下，尋找 <code>page.md</code> ，並根據其內容建立檔案，所以我們可以將常用的配置，統一將預設的設定至scaffolds目錄下的模板。</p>
+<h3 id="source-目錄"><a href="#source-目錄" class="headerlink" title="source 目錄"></a>source 目錄</h3><p>此目錄是放置原始檔案與內容的地方，像是文章的md檔或是一些圖片檔案，透過Hexo發佈命令時，會將此目錄下的檔案或目錄生成或複製至 <code>Public</code> 目錄下，大多時候我們都是在這個目錄下操作編輯。</p>
+<p>※ 目錄前綴若是 <code>_</code> (底線)，則會被忽略，不會被複製至  <code>Public</code> 目錄，但是 <code>_posts</code> 目錄是例外。</p>
+<h3 id="themes-目錄"><a href="#themes-目錄" class="headerlink" title="themes 目錄"></a>themes 目錄</h3><p>此目錄是Hexo的主題目錄，Hexo會根據此目錄下的主題來生成靜態檔案。</p>
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>Hexo的配置檔案，大部分設定都在這個檔案，後續文章會再另外介紹。</p>
+<h3 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h3><p>是一個json格式的文件，主要是用來描述相依的相關套件與應用程式的資訊。</p>
+<h2 id="文章發佈流程"><a href="#文章發佈流程" class="headerlink" title="文章發佈流程"></a>文章發佈流程</h2><p>當我們做完初始化後，就可以開始撰寫文章了，而最基本的流程:</p>
 <ul>
-<li>需要程式基礎</li>
-<li>需要開發環境 (可結合CI/CD解決)</li>
-<li>無動態頁面功能</li>
+<li>建立文章</li>
+<li>產生靜態檔案</li>
+<li>啟動伺服器</li>
+<li>部署網站</li>
 </ul>
-<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>之前曾經使用過Jekyll，是基於Ruby開發，不過對於在windows相容性較差些，後來喜歡Hexo是透過Node.js開發，作者Tommy Chen是台灣人，也越來越多人使用Hexo建立自己的blog。Hexo建置快速且生成的網站體積小，發佈文章流程也相對簡單，支援Markdown語法，透過 <code>.md</code> 檔案發佈，未來也可以輕鬆轉移至其他平台。</p>
-<h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><p>透過Hexo產生的blog靜態頁面需要有一個網站空間，而除了自己建置或是租用空間外，身為開發人員當然是直接使用GitHub Pages，以GitHub這樣的服務相對來說甚至比一般租用空間還穩定，同時因為將原始碼都透過GitHub做版本控管，也有助於文章的發佈管理，GitHub Pages是免費的，不過仍有些<a href="https://help.github.com/en/github/working-with-github-pages/about-github-pages#usage-limits" target="_blank" rel="noopener">限制</a>，只是一般個人情境使用應該都夠了。</p>
-<h2 id="CircleCI"><a href="#CircleCI" class="headerlink" title="CircleCI"></a>CircleCI</h2><p>為了可以專心在寫作上，所以結合DevOps的精神，採用CircleCI，讓我們可以只要將文章Commit至GitHub後，透過CircleCI自動幫我們建置blog，如此一來我們要是有時候發現錯字，也可以快速在GitHub上編輯即可，把瑣碎的部署工作交給CircleCI。</p>
-<p>另外選擇CircleCI的原因還有因為我將blog原始碼放在Git私人的repository，而像是Travis CI免費版並不支援，但CircleCI免費版每個月也有使用限制，不過如果真的超過限制，我想還可以先透過手動部署撐一下。</p>
-<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>目前也花了一些時間調整Hexo設定，並使用了滿多人使用的主題NexT，接下來會另外寫文章介紹本blog做了那些設定跟調整，而相關配置也會持續優化，希望可以持續下去這股熱忱，累積更多文章與分享知識。</p>
+<h3 id="建立文章"><a href="#建立文章" class="headerlink" title="建立文章"></a>建立文章</h3><p>建立一篇新的文章，如果標題包含空格時，需要用引號刮起來</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo new [layout] &lt;title&gt;</span></span><br><span class="line">$ hexo new <span class="string">"first post"</span></span><br></pre></td></tr></table></figure>
+
+<p>執行上述命令後，會產生 <code>first-post.md</code> 檔案至 <code>.\source\_posts\</code> 目錄下，就可以開始撰寫文章內容。</p>
+<p>※ <code>[layout]</code> 如果沒有指定，會使用預設 (post)。</p>
+<h3 id="產生靜態檔案"><a href="#產生靜態檔案" class="headerlink" title="產生靜態檔案"></a>產生靜態檔案</h3><p>Hexo根據主題與 <code>source</code> 目錄的相關檔案，開始解析並產生靜態檔案如 <code>html</code> 至 <code>public</code> 目錄</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<h3 id="啟動伺服器"><a href="#啟動伺服器" class="headerlink" title="啟動伺服器"></a>啟動伺服器</h3><p>Hexo本身內建一個網站伺服器，可以讓我們確認靜態檔案生成的結果</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>可以直接透過瀏覽器訪問 <code>http://localhost:4000/</code> 。</p>
+<p>※ 可以透過 <code>-p &lt;port&gt;</code> 參數指定Port，預設為4000。</p>
+<h3 id="部署網站"><a href="#部署網站" class="headerlink" title="部署網站"></a>部署網站</h3><p>當我們可以在localhost順利看到我們發佈的文章與內容時，接下來就是將靜態檔案給部署至遠端的伺服器，讓大家都可以看到我們的文章，Hexo本身提供<a href="https://hexo.io/zh-tw/docs/one-command-deployment" target="_blank" rel="noopener">多種</a>部署方式，只要安裝對應的套件即可，而我們就以<strong>Git</strong>為例:</p>
+<ol>
+<li><p>需要安裝對應的套件<a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>:</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改 <code>_config.yml</code> 檔案設定</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: &lt;repository url&gt; <span class="comment"># https://github.com/&lt;user name&gt;/&lt;repository name&gt;.git</span></span><br><span class="line">  branch: [branch] <span class="comment"># 可設定分支，例如master，GitHub預設為gh-pages</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>上傳檔案</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp; hexo deploy <span class="comment"># 建立部署前執行clean命令，清除快取</span></span><br></pre></td></tr></table></figure>
+
+<p> ※ 過程可能需要輸入GitHub帳號密碼</p>
+</li>
+</ol>
+<p>通過上面的步驟後，現在應該已經可以在你的GitHub repository看到上傳的靜態檔案，這時候可以結合<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>的功能，看到屬於你自己的blog囉。</p>
+<h2 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h2><p>介紹到這邊，理論上基本的流程已可以讓我們順利發佈文章，同時部署至GitHub Pages上，所以最陽春的blog已經建立完成，整體流程相當簡單，僅需要有 <code>Node.js</code> 、<code>npm</code> 與 <code>Git</code> 等基本相關知識，相信也應該都難不倒大家，接下來就可以嘗試去修改主題及Hexo相關設定，之後的文章也會陸續介紹，有興趣的可以先動手玩玩了。</p>
 
     </div>
 
@@ -317,7 +354,7 @@
   <div class="popular-posts-header">相關文章</div>
   <ul class="popular-posts">
     <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/e0a00714.html" rel="bookmark">Hexo- 帶你認識Blog框架</a></div>
+      <div class="popular-posts-title"><a href="/posts/32581212.html" rel="bookmark">建立Blog使用 Hexo + GitHub Pages + CircleCI</a></div>
     </li>
   </ul>
 
@@ -330,7 +367,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>文章連結：</strong>
-    <a href="https://blog.icoding.tw/posts/32581212.html" title="建立Blog使用 Hexo + GitHub Pages + CircleCI">https://blog.icoding.tw/posts/32581212.html</a>
+    <a href="https://blog.icoding.tw/posts/e0a00714.html" title="Hexo- 帶你認識Blog框架">https://blog.icoding.tw/posts/e0a00714.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版權聲明： </strong>本網誌所有文章除特別聲明外，均採用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh_TW" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 許可協議。轉載請註明出處！
@@ -345,7 +382,6 @@
               <a href="/tags/Hexo/" rel="tag"># Hexo</a>
               <a href="/tags/GitHub/" rel="tag"># GitHub</a>
               <a href="/tags/GitHub-Pages/" rel="tag"># GitHub Pages</a>
-              <a href="/tags/CircleCI/" rel="tag"># CircleCI</a>
           </div>
 
         
@@ -353,11 +389,11 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/posts/e0a00714.html" rel="next" title="Hexo- 帶你認識Blog框架">
-      Hexo- 帶你認識Blog框架 <i class="fa fa-chevron-right"></i>
+    <a href="/posts/32581212.html" rel="prev" title="建立Blog使用 Hexo + GitHub Pages + CircleCI">
+      <i class="fa fa-chevron-left"></i> 建立Blog使用 Hexo + GitHub Pages + CircleCI
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -417,7 +453,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">2.</span> <span class="nav-text">Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Pages"><span class="nav-number">3.</span> <span class="nav-text">GitHub Pages</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CircleCI"><span class="nav-number">4.</span> <span class="nav-text">CircleCI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#結論"><span class="nav-number">5.</span> <span class="nav-text">結論</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安裝"><span class="nav-number">2.</span> <span class="nav-text">安裝</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">3.</span> <span class="nav-text">初始化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#scaffolds-目錄"><span class="nav-number">3.1.</span> <span class="nav-text">scaffolds 目錄</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#source-目錄"><span class="nav-number">3.2.</span> <span class="nav-text">source 目錄</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#themes-目錄"><span class="nav-number">3.3.</span> <span class="nav-text">themes 目錄</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#config-yml"><span class="nav-number">3.4.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#package-json"><span class="nav-number">3.5.</span> <span class="nav-text">package.json</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章發佈流程"><span class="nav-number">4.</span> <span class="nav-text">文章發佈流程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建立文章"><span class="nav-number">4.1.</span> <span class="nav-text">建立文章</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#產生靜態檔案"><span class="nav-number">4.2.</span> <span class="nav-text">產生靜態檔案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#啟動伺服器"><span class="nav-number">4.3.</span> <span class="nav-text">啟動伺服器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署網站"><span class="nav-number">4.4.</span> <span class="nav-text">部署網站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#結論"><span class="nav-number">5.</span> <span class="nav-text">結論</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -585,7 +621,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'blog',
       owner       : 'Wayne-Kao',
       admin       : ['Wayne-Kao'],
-      id          : 'b84f3b1e2b409166d5ad020247aed65d',
+      id          : '16e316c090475c2bab7cd0083bdeedbc',
         language: 'zh-TW',
       distractionFreeMode: true
     });
