@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.icoding.tw/"/>
-  <updated>2020-04-05T18:18:59.864Z</updated>
+  <updated>2020-04-14T18:31:35.108Z</updated>
   <id>https://blog.icoding.tw/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>markdown tutorial</title>
+    <link href="https://blog.icoding.tw/posts/ffa1546f.html"/>
+    <id>https://blog.icoding.tw/posts/ffa1546f.html</id>
+    <published>2020-04-13T19:47:06.000Z</published>
+    <updated>2020-04-14T18:31:35.108Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/images/markdown-tutorial/cover.png&quot; alt=&quot;Cover&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Markdown是一種輕量級標記式語言，主要特性就是&lt;strong&gt;易讀易寫&lt;/strong&gt;的純文字格式，在近幾年已經成為多數網站跟平台用來撰寫文件或訊息的支援格式，尤其受到程式設計師與文字作者的青睞，在使用它之前，你應該對它有個基本的認識。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+      <category term="Markdown" scheme="https://blog.icoding.tw/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo- 帶你認識Blog框架</title>
     <link href="https://blog.icoding.tw/posts/e0a00714.html"/>
     <id>https://blog.icoding.tw/posts/e0a00714.html</id>
     <published>2020-04-05T23:12:19.000Z</published>
-    <updated>2020-04-05T18:18:59.864Z</updated>
+    <updated>2020-04-14T18:31:35.108Z</updated>
     
     <summary type="html">
     
@@ -49,7 +69,7 @@
     <link href="https://blog.icoding.tw/posts/32581212.html"/>
     <id>https://blog.icoding.tw/posts/32581212.html</id>
     <published>2020-04-02T21:59:29.000Z</published>
-    <updated>2020-04-05T18:18:59.864Z</updated>
+    <updated>2020-04-14T18:31:35.108Z</updated>
     
     <summary type="html">
     
